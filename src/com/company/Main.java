@@ -56,16 +56,8 @@ public class Main {
                 System.out.println("Letter was B");
                 break;
 
-            case 'C':
-                System.out.println("Letter was C");
-                break;
-
-            case 'D':
-                System.out.println("Letter was D");
-                break;
-
-            case 'E':
-                System.out.println("Letter was E");
+            case 'C': case 'D': case 'E':
+                System.out.println("Letter was not C, D, or E");
                 break;
 
             default:
