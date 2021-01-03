@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Locale;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -57,11 +59,25 @@ public class Main {
                 break;
 
             case 'C': case 'D': case 'E':
-                System.out.println("Letter was not C, D, or E");
+                System.out.println("Letter was C, D, or E");
                 break;
 
             default:
                 System.out.println("Not found");
+        }
+
+        String month = "JuNe";
+	    switch(month.toLowerCase()) {
+            case "january":
+                System.out.println("Jan");
+                break;
+
+            case "june":
+                System.out.println("Jun");
+                break;
+
+            default:
+                System.out.println("Not sure");
         }
     }
 }
