@@ -86,7 +86,7 @@ public class Main {
         System.out.println(isLeapYear(1600));
         System.out.println(isLeapYear(2017));
         System.out.println(isLeapYear(2000));
-
+        getDaysInMonth(2, 2020);
     }
 
 
@@ -209,21 +209,23 @@ public class Main {
         if((year < 1) || (year > 9999)) {
             return -1;
         }
-        isLeapYear(year);
 
         switch(month) {
             case 1: case 3: case 5: case 7: case 8: case 10: case 12:
-                System.out.println();
+                System.out.println(31);
                 break;
             case 4: case 6: case 9: case 11:
-                System.out.println();
+                System.out.println(30);
                 break;
             case 2:
-                System.out.println();
+                if(isLeapYear(year)) {
+                    System.out.println(29);
+                } else System.out.println(28);
                 break;
             default :
-                System.out.println();
+                System.out.println(-1);
                 break;
         }
+        return month;
     }
 }
